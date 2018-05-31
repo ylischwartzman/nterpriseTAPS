@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+		font-family: verdana,arial,sans-serif;
+	}
+table {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+}
+tr:hover td{
+	background: #FFFF99;
+}
+
+
+.yellow-bg {
+	background: #F9D77E;
+}
+.red-bg {
+	background: #FFB2B2;
+}
+.green-bg {
+	background: #B2D8B2;
+}
+.blue-bg {
+	background: #B2EDFF;
+}

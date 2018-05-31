@@ -1,0 +1,36 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>nterprise TAPS Logs</title>
+	<!-- Set the "content" value to the refresh speed for the log page for live monitoring -->
+	<meta http-equiv="refresh" content="30">
+	<script src=static/js/jquery-3.1.1.js></script>
+	<script src=static/js/sortable.js></script>
+	<link href="static/css/nterprise-taps.css?1018" rel="stylesheet">
+	<script src=static/js/nterprise-taps.js?1018></script>
+	</head>
+
+	<body>
+	<h4>nterprise TAPS Log File</h4>
+	<i>NOTE: You must copy/paste any links into a new tab due to CORS restrictions with accessing CUCM/Unity by clicking links.</i><br><br>
+	<b>nterprise:</b> {{ nterpriseLink|safe }}<br>
+	<b>Servers:</b> {{ serverLink|safe }}<br><br>
+	<a href='tapsLog.csv'>Download as CSV</a><br>
+	<i>Click a column header to sort</i><br>
+	<table class=sortable>
+		<thead>
+			<tr>
+			{% for column in header %}<th>{{ column }}</th>{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in log %}
+			<tr>
+			{% for column in row %}<td>{{ column|safe if column != 'None' and column is not none else '' }}</td>{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	</body>
+</html>
