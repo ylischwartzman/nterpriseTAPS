@@ -9,6 +9,7 @@
 	Email:	yli.schwartzman@nfrastructure.com
 	Copyright 2018 Zones nfrastructure
 
+#	Summary:
 	This program can be used to deploy enhanced TAPS-like deployment services to a CUCM system
 	The service is presented as an XML service to the phone display
 
@@ -37,6 +38,7 @@
 		If successful, the phone will reboot and come up with the new configuration
 		If unsuccessful, the phone will reboot and auto-register again.
 
+#	Requirements:
 	Run on Windows Server or PC (2012+ recommended)
 		IIS
 		CUCM AXL and RIS Schema
@@ -78,7 +80,7 @@
 		Select the service on the phone to initate the TAPS UNDO process.
 
 
-	LOGGING
+#	LOGGING
 		Log records of all transactions are kept in a sqlite3 database file
 		They are visible as a sortable table at this URL:
 			<tapsURL>/tapsLog
