@@ -10,6 +10,8 @@
 	Copyright 2018 Zones nfrastructure
 
 #	Summary:
+	*View the full ReadMe word document for details and screenshots
+	
 	This program can be used to deploy enhanced TAPS-like deployment services to a CUCM system
 	The service is presented as an XML service to the phone display
 
